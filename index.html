@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">     
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <!-- CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>His Vegan Diner</title>
+       <link rel="stylesheet" href="index.css">
+    </head>
+ <body>
+    <section class="header" role="img" aria-label="A picture of a vegan burger">
+            <h1 class="headerh1">His Diner</h1>
+            <p class="headerp">The Best Vegan Junk Food in Town</p>
+    </section>
+
+<div class="container" id="container-menu">
+   
+</div>
+<!-- Menu content will be rendered here -->
+
+<div class="order" id="order"></div>
+<!-- Order content will be rendered here -->
+
+<div id="modal" class="modal">
+    <h3>Enter Card Details</h3>
+    <form id="modal-content" class="modal-content">
+        <input type="text" name="fullName" placeholder="Enter your name"
+         minlength="2" maxlength="25" pattern="[a-zA-Z\s]*" required>
+        <input type="creditcard" name="creditcard" placeholder="Enter card number" 
+        pattern="[0-9]+"  maxlength="16" minlength="16" required>
+        <input type="cvv" name="cvv" placeholder="Enter CVV" pattern="[0-9]+" minlength="3" maxlength="3" required>
+         <button class="pay" id="pay" type="submit"><p class="paytext">Pay</p></button>
+    </form>
+</div>
+
+<div class="card-container">
+<div class="card" id="card"></div>
+<!-- Card content will be rendered here -->
+</div>
+
+
+
+
+<script src="index.js" type="module"></script>
+    </body>
+</html>

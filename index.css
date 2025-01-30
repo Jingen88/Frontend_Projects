@@ -1,0 +1,259 @@
+body {
+    background-color: black;
+    margin-top: 0;
+    margin: auto;
+    padding: 0;
+    width: 600px;
+    font-family: "Smythe", serif;
+}
+
+.header {
+    background-image: url('burger.png');
+    background-size: cover;
+    width: 600px;
+    height: 167px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: auto;
+    width: 600px;
+    padding-bottom: 30px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 508px;
+    height: 140px;
+    border-bottom: 2px solid #D2D2D2;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: auto;
+    padding: 0;
+}
+
+.menu-emoji {
+    font-size: 78px;
+    margin-right: 5px;
+    padding: 0;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    font-size: 22px;
+    font-family: "inter";
+    font-weight: 700;
+    color: #3C3C3C;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Fonts Styling */
+.headerh1, .headerp {
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+}
+
+.headerh1 {
+    font-size: 2.4375em;
+    padding-top: 26px;
+    padding-left: 26px;
+    margin-bottom: 2px;
+}
+
+.headerp {
+    margin-top: 0px;
+    padding-left: 26px;
+}
+
+.name {
+    font-size: 1.75em;
+    font-weight: normal;
+}
+
+.ingredients {
+    font-size: 1em;
+    color: #8B8B8B;
+}
+
+.price {
+    font-size: 1.25em;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin:auto; ;
+    font-size:1.75em;
+    font-weight: normal;
+}
+
+.ordered-items,.total-price{
+   margin-top:auto ;
+   margin-bottom: auto;
+    font-size:1.75em;
+    font-weight: normal;
+
+}
+.total-usd,.ordered-price{
+   margin-top: auto;
+   margin-bottom: auto;
+    font-size: 1.25em;
+    font-weight: normal;
+} 
+
+/* Order pop Up */
+.order {
+    
+    height: auto; /* Adjust height to fit content */
+    width: 600px;
+    background-color: white; /* Ensure background color is set */
+    display: block;
+    color: black; /* Ensure text color is visible */
+    margin: auto;
+    z-index: 8;/* Ensure the order section is positioned relative to the parent */
+}
+
+.orders {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto;
+    border-top: 2px solid black;
+    padding: 10px;
+}
+
+.order-btn {
+    font-size: 1.5em;
+    position: relative;
+    height: 60px;
+    width:100%; /* Ensure the button takes full width */
+    background-color: #16DB99;
+    color: white;
+    font-style: verdana, sans-serif;
+    border-radius: 3px;
+    border: none; 
+    cursor: pointer;
+    margin: auto;
+}
+
+.remove {
+    border: none;
+    background-color: white;
+    color: #BBBBBB;
+    font-size: 0.75em;
+    margin: auto;
+    cursor: pointer;
+    margin: auto auto auto 10px;
+} 
+
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 542px;
+    width: 524px;
+    border-radius: 3.89px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+}
+
+.modal-content input {
+    font-size: 1.5em;
+    font-weight: normal;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px auto 30px auto;
+    height: 71px;
+    width: 475px;
+    border: 1px solid #757575;
+    border-radius: 3.89px;
+}
+
+
+
+h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px auto 30px auto;
+    color: black;
+    text-align: center;
+}
+
+.pay{
+    
+    border: none;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;;
+    margin-top: 60px;
+    width: 478px;
+    height:71px;
+    border-radius: 3.89px;
+    background-color: #16DB99;
+    cursor: pointer;
+
+}
+
+.paytext{
+    font-size: 1.5em;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin: auto;
+
+}
+
+.card{
+    display: none;
+    height:120px;
+    width:504px;
+    background-color: #ECFDF5;
+    text-align: center;
+    z-index: 11;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.thanks{
+    text-align: center;
+    font-family: "Smythe", serif;
+    font-size: 2em;
+    color:#065F46;
+}
+
+.card-container{
+    width: 600px;
+    background-color: white;
+}
+
